@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&family=Outfit:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(0, 0%, 95%);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    border-radius: 15px;
+    overflow: hidden;
+    width: 65%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr)
+}
+
+.content-box {
+    min-height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 15%;
+}
+
+.content-box h1 {
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-weight: 700;
+    color: hsl(0, 0%, 95%);
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.content-box p {
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 20px;
+}
+
+.content-box a {
+    background-color: white;
+    border-radius: 40px;
+    font-size: 18px;
+    text-decoration: none;
+    max-width: 200px;
+    padding: 15px 0px 15px 30px;
+    cursor: pointer;
+}
+
+.content-box a:hover {
+    color: white;
+    font-weight: 700;
+    background-color: transparent;
+    outline: 2px solid white;
+}
+
+.sedans {
+
+    background-color: hsl(31, 77%, 52%);
+
+    .sedans-button {
+        color: hsl(31, 77%, 52%);
+    }
+}
+
+
+.suvs {
+    background-color: hsl(184, 100%, 22%);
+
+    .suvs-button {
+        color: hsl(184, 100%, 22%);
+    }
+}
+
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+
+    .luxury-button {
+        color: hsl(179, 100%, 13%);
+    }
+}
+
+.attribution {
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.attribution a {
+    color: blueviolet;
+}
+
+
+/*! RESPONSIVE  */
+
+@media (max-width: 768px) {
+    body {
+        padding: 60px 0px;
+        height: 100%;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+        width: 80%;
+    }
+
+    .content-box {
+        height: 600px;
+        width: 100%;
+        padding: 0 10%;
+    }
+
+    .content-box h1 {
+        font-size: 30px;
+    }
+
+    .content-box p {
+        font-size: 20px;
+    }
+
+    .content-box a {
+        border-radius: 30px;
+        padding: 15px 0 15px 30px;
+    }
+}
